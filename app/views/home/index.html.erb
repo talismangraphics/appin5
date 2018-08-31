@@ -19,6 +19,26 @@
 
 <a href="">Download All Current Products</a>
 
+<h3> Product List</h3>
+
+<% @products.each %>
+
+<h3> <% product.title %> </h3>
+<ul>
+	<li>Price: <% product.price %>
+	</li>
+	<li>Tags: <% product.tags %>
+	</li>
+	<li>Image: <% product.image.src %>
+	</li>
+	<li>ID: <% product.id %>
+	</li>
+	<li>Handle: <% product.handle %>
+	</li>
+</ul>
+<% end %>
+
+
 <hr>
 
 <h2>Webhooks</h2>
