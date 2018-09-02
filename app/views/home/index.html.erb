@@ -21,21 +21,10 @@
 
 <h3> Product List</h3>
 
-<% @products.each do |product|%>
+<% @products.each do |product| %>
 
 <h3> <% product.title %> </h3>
-<ul>
-	<li>Price: <% product.price %>
-	</li>
-	<li>Tags: <% product.tags %>
-	</li>
-	<li>Image: <% product.image.src %>
-	</li>
-	<li>ID: <% product.id %>
-	</li>
-	<li>Handle: <% product.handle %>
-	</li>
-</ul>
+
 <% end %>
 
 
