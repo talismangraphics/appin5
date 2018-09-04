@@ -28,6 +28,11 @@
 		<li>ID: <%= product.id %>  </li>
 		<li>Price:</li>
 		<li>Tags:</li>
+			<ul>
+			<% for tag in product.tags %>
+				<li><%= tag %></li>
+				<% end %>
+			</ul>
 		<li>SKU:</li>
 	</ul> 
 <% end %>
