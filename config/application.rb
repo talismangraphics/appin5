@@ -17,3 +17,6 @@ module ShopifyApp
     # the framework and any gems in your application.
   end
 end
+
+gmail_username: 'cjabas@gmail.com'
+gmail_password: 'Lovenut23!'
