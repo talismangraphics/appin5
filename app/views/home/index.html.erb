@@ -27,12 +27,7 @@
 	<ul>
 		<li>ID: <%= product.id %>  </li>
 		<li>Price:</li>
-		<li>Tags:</li>
-			<ul>
-			  <% product.tags.each do |tag| %>
-				<li><%= tag %></li>
-		      <% end %>
-			</ul>
+		<li>Tags: <%= product.tags %></li>
 		<li>SKU:</li>
 	</ul> 
 <% end %>
