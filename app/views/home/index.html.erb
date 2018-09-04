@@ -24,7 +24,12 @@
 <% @products.each do |product| %>
 
 <h3> <%= product.title %> </h3>
-
+	<ul>
+		<li>ID: <%= product.id %>  </li>
+		<li>Price: <%= product.price %> </li>
+		<li>Tags:</li>
+		<li>SKU: <%= product.selected_variant.sku%></li>
+	</ul> 
 <% end %>
 
 
