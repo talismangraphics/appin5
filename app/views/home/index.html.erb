@@ -29,9 +29,9 @@
 		<li>Price:</li>
 		<li>Tags:</li>
 			<ul>
-			<% for tag in product.tags %>
+			  <% product.tags.each do |tag| %>
 				<li><%= tag %></li>
-				<% end %>
+		      <% end %>
 			</ul>
 		<li>SKU:</li>
 	</ul> 
