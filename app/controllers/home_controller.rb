@@ -13,6 +13,10 @@ class HomeController < ShopifyApp::AuthenticatedController
      "#{knownVendors}"
   end
   def createGoogleSpreadsheet()
-    File.new("testfile.txt") 
+    path = "../storage/export.txt"
+    content = "data from the form"
+    File.open(path, "w+") do |f|
+    f.write(content)
+end 
   end
 end
