@@ -5,6 +5,7 @@ class HomeController < ShopifyApp::AuthenticatedController
     @webhooks = ShopifyAPI::Webhook.find(:all)
     #@mailme = ExampleMailer.sample_email(@user).deliver
 	@listVendor = checkVendor ("Cal Royal")
+	@makeMySheet = createGoogleSpreadsheet()
 	@greeting = "Wazzap"
   end
   def checkVendor (vendor)
