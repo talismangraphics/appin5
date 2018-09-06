@@ -7,7 +7,7 @@ class HomeController < ShopifyApp::AuthenticatedController
   end
   def checkVendor (vendor)
     knownVendors = Array["Von Duprin","Cal Royal","Stanley Best"]
-    puts "#{knownVendors}"
+     "#{knownVendors}"
   end
   def createGoogleSpreadsheet()
     File.new("testfile.txt") 
