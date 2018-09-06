@@ -3,6 +3,13 @@ class HomeController < ShopifyApp::AuthenticatedController
     @products = ShopifyAPI::Product.find(:all, params: { limit: 10 })
     @webhooks = ShopifyAPI::Webhook.find(:all)
     #@mailme = ExampleMailer.sample_email(@user).deliver
-    
+   
+    def checkVendor (vendor)
+	  knownVendors = Array["Von Duprin","Cal Royal","Stanley Best"]
+	  puts "#{knownVendors}"
+    end
+    def createGoogleSpreadsheet()
+	 File.new("testfile.txt") 
+    end
   end
 end
