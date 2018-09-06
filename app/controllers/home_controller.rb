@@ -3,7 +3,7 @@ class HomeController < ShopifyApp::AuthenticatedController
     @products = ShopifyAPI::Product.find(:all, params: { limit: 10 })
     @webhooks = ShopifyAPI::Webhook.find(:all)
     #@mailme = ExampleMailer.sample_email(@user).deliver
-   
+	@checkVendor = checkVendor ("Cal Royal")
   end
   def checkVendor (vendor)
     knownVendors = Array["Von Duprin","Cal Royal","Stanley Best"]
