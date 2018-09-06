@@ -5,6 +5,7 @@ class HomeController < ShopifyApp::AuthenticatedController
     @webhooks = ShopifyAPI::Webhook.find(:all)
     #@mailme = ExampleMailer.sample_email(@user).deliver
 	@listVendor = checkVendor ("Cal Royal")
+	@greeting = "Wazzap"
   end
   def checkVendor (vendor)
     knownVendors = Array["Von Duprin","Cal Royal","Stanley Best"]
